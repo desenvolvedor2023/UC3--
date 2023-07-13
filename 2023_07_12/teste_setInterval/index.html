@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sentInteval.css">
+	<title>Document</title>
+</head>
+<body>
+    <div class="caixa">
+        <h1>numero:</h1> 
+        <div class="cx1"></div>
+    </div>
+
+        <input type="submit" name="enviar" id="enviar">
+        <input type="text" name="visor" id="visor">
+</body>
+</html>
+
+<script type = "text/javascript">
+
+let contador = 0;
+let Interval = setInterval(Iniciar,1000);
+let visor = document.getElementById('visor');
+
+    function Iniciar(){
+        if (contador == 5){
+            clearInterval(Interval);
+            alert('Terminou');
+            return;
+        }
+    contador = contador+1;
+    visor.innerText = contador;
+    }
+
+</script>

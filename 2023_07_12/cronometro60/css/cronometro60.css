@@ -1,0 +1,34 @@
+body{
+   flex-direction: column;
+}
+.cx1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border: solid rgb(4, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140px;
+    margin-right: 10px;
+}
+h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#contadorN{
+    width: 200px;
+    height: 50px;
+   
+}
+#enviar{
+    width: 200px;
+    height: 50px;
+}

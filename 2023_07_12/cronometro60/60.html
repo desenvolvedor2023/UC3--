@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cronometro60.css">
+	<title>Document</title>
+</head>
+<body>
+    <div class="cx1">
+    <div class="minuto caixa">0</div>
+    <div class="segundos caixa">0</div>
+     <div class=" milisegundos caixa">0</div>
+    </div>     
+
+    <div>
+        <h1>TEMPO</h1> 
+    
+        <div class="linha">
+            <div class="cx_tempo" name = "min" id = "min"></div>
+            <div class="cx_tempo" ></div>
+        </div>
+            <input type="submit" name="enviar" id="enviar">
+            <input type="text" name="contadorN" id="contadorN">
+    </div>
+</body>
+</html>
+
+<script type = "text/javascript">
+
+let contador = 0;
+let Interval = setInterval(Iniciar,1000);
+
+    function Iniciar(){
+        if (contador == 5) {
+            clearInterval(Interval);
+            alert('Terminou');
+            return;
+        }
+    contador = contador+1;
+    resp.innerText = contador;
+    }
+
+</script>

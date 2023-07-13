@@ -1,0 +1,15 @@
+const entradas = require('prompt-sync')({ singit: true });
+
+
+let contador = 0;
+let Interval = setInterval(Iniciar,1000);
+
+    function iniciar(){
+        if (contador == 5) {
+            clearInterval(Interval);
+            alert('Terminou');
+            return;
+        }
+    }
+    contador = contador+1;
+    resp.innerText = contador;
